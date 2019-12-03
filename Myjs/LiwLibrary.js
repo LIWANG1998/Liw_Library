@@ -8,4 +8,5 @@ function $(el, isAll) {
     if (isAll)
         return document.querySelectorAll(el);
     return document.querySelector(el);
+
 }
