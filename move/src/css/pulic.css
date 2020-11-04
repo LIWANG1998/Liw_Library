@@ -1,0 +1,71 @@
+.flex-col {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col-bd {
+    flex: 1;
+}
+
+.blue {
+    color: #409EFF;
+}
+
+/* 超出一行省略 */
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 上下 剧中 */
+.flex-ac {
+    display: flex;
+    align-items: center;
+}
+
+/* 左右 对齐 */
+.flex-jsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 上下 左右 剧中 */
+.flex-ac-jc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 上下 剧中 左右对齐 */
+.flex-ac-jsb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* flex 上下排列 上下 剧中 左右对齐 */
+.flex-fd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 初始化 */
+.init {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.init * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 初始化 */
+.bg-color-3f {
+    background-color: #ffffff;
+}

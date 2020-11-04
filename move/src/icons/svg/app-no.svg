@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14.001" viewBox="0 0 14 14.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f56c6c;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_4505" data-name="组 4505" transform="translate(-64.544 -444.544)">
+    <path id="减去_49" data-name="减去 49" class="cls-1" d="M6.662,13A6.433,6.433,0,0,0,13,6.662,6.507,6.507,0,0,0,6.662,0,6.572,6.572,0,0,0,0,6.662,6.507,6.507,0,0,0,6.662,13Z" transform="translate(65.044 445.044)"/>
+    <path id="减去_50" data-name="减去 50" class="cls-2" d="M2.5,1.667.833,0,0,.833,1.667,2.5,0,4.167.833,5,2.5,3.333,4.167,5,5,4.167,3.333,2.5,5,.833,4.167,0Z" transform="translate(69.044 449.044)"/>
+  </g>
+</svg>

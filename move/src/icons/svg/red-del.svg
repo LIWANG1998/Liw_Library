@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.5" height="12.5" viewBox="0 0 12.5 12.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f56c6c;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 0.5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_4624" data-name="组 4624" transform="translate(0.25 0.25)">
+    <path id="减去_49" data-name="减去 49" class="cls-1" d="M6.15,12A5.938,5.938,0,0,0,12,6.15,6.006,6.006,0,0,0,6.15,0,6.066,6.066,0,0,0,0,6.15,6.006,6.006,0,0,0,6.15,12Z"/>
+    <path id="减去_50" data-name="减去 50" class="cls-2" d="M2.323,1.549.775,0,0,.774,1.549,2.323,0,3.872l.775.774L2.323,3.1,3.872,4.646l.774-.774L3.1,2.323,4.646.774,3.872,0Z" transform="translate(3.677 3.742)"/>
+  </g>
+</svg>

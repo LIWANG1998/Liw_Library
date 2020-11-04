@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #0082ef;
+      }
+    </style>
+  </defs>
+  <g id="组_3211" data-name="组 3211" transform="translate(-67 -259)">
+    <path id="Oval_7_Copy_2" data-name="Oval 7 Copy 2" class="cls-1" d="M6.15,12A5.938,5.938,0,0,0,12,6.15,6.006,6.006,0,0,0,6.15,0,6.066,6.066,0,0,0,0,6.15,6.006,6.006,0,0,0,6.15,12Z" transform="translate(67 259)"/>
+    <g id="组_3210" data-name="组 3210" transform="translate(0 0)">
+      <path id="Oval_7_Copy_2-2" data-name="Oval 7 Copy 2" class="cls-2" d="M5.125,10A4.949,4.949,0,0,0,10,5.125,5.005,5.005,0,0,0,5.125,0,5.055,5.055,0,0,0,0,5.125,5.005,5.005,0,0,0,5.125,10Z" transform="translate(68 260)"/>
+      <path id="pop_check" class="cls-1" d="M1.989,4.566,6,.333,5.556,0,1.99,3.36.444,1.8,0,2.242Z" transform="translate(70 263)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,121 @@
+// 预览公文样式
+.infoBox {
+    position: relative;
+    width: 360px;
+    padding: 19px;
+    font-size: 12px;
+  
+    .big-title {
+      border: 1px solid #ff0000;
+      color: #ff0000;
+      text-align: center;
+      min-height: 44px;
+      line-height: 44px;
+    }
+    .line {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ff0000;
+      border-top: none;
+      .head {
+        text-align: center;
+        width: 86px;
+      }
+      .body {
+        padding-left: 20px;
+        border-left: 1px solid #ff0000;
+      }
+    }
+    .fir {
+      .head {
+        min-height: 44px;
+        line-height: 44px;
+      }
+      .body {
+        width: 298px;
+        min-height: 44px;
+        line-height: 44px;
+      }
+    }
+    .sec {
+      width: 100%;
+      box-sizing: border-box;
+      .item {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        box-sizing: border-box;
+        &:first-child {
+          border-right: 1px solid #ff0000;
+        }
+        .head {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 75px;
+          min-height: 44px;
+          box-sizing: border-box;
+        }
+        .body {
+          padding-left: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 44px;
+          flex: 1;
+          box-sizing: border-box;
+          border-left: 1px solid #ff0000;
+        }
+      }
+    }
+    .thr {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      word-break: break-all;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      .item {
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
+        max-width: 179px;
+        height: 100%;
+        &:first-child {
+          .body {
+            border-right: 1px solid #ff0000;
+          }
+        }
+        .head {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+          width: 75px;
+          min-height: 86px;
+          box-sizing: border-box;
+        }
+        .body {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 20px 0 0 0;
+          min-height: 86px;
+          width: 104px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .file-text {
+      margin-top: 20px;
+      .head {
+        text-align: center;
+        h3 {
+          color: #fa5555;
+          padding: 10px 0;
+          font-size: 20px;
+          font-weight: 600;
+          border-bottom: 1px solid #f56c6c;
+        }
+      }
+    }
+  }

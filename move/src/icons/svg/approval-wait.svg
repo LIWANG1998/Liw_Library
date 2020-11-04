@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cdd2dc;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_4437" data-name="组 4437" transform="translate(-364 -296)">
+    <g id="组_4314" data-name="组 4314" transform="translate(364 296)">
+      <g id="组_4312" data-name="组 4312" transform="translate(0 0)">
+        <path id="Oval_7_Copy_2" data-name="Oval 7 Copy 2" class="cls-1" d="M8.2,16A7.918,7.918,0,0,0,16,8.2,8.008,8.008,0,0,0,8.2,0,8.088,8.088,0,0,0,0,8.2,8.008,8.008,0,0,0,8.2,16Z"/>
+      </g>
+    </g>
+    <path id="路径_2685" data-name="路径 2685" class="cls-2" d="M111.25,68.2v-.846a1.749,1.749,0,1,1,1.4,0V68.2h1.573a.873.873,0,0,1,.876.875v.875h-6.3v-.875a.876.876,0,0,1,.876-.875Zm-2.1,2.1h5.6V71h-5.6v-.7Z" transform="translate(260.199 235.999)"/>
+  </g>
+</svg>
