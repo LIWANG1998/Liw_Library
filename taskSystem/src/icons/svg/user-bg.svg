@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="412" height="178" viewBox="0 0 412 178">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-6 {
+        fill: #6ac1ff;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.11;
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        opacity: 0.51;
+      }
+
+      .cls-5 {
+        opacity: 0.17;
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6 {
+        opacity: 0.59;
+      }
+
+      .cls-7 {
+        filter: url(#路径_2411);
+      }
+
+      .cls-8 {
+        filter: url(#路径_2416);
+      }
+
+      .cls-9 {
+        filter: url(#路径_2415);
+      }
+    </style>
+    <filter id="路径_2415" x="0" y="0" width="412" height="178" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#b0c6ec" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="路径_2416" x="0" y="0" width="412" height="178" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-color="#6ac1ff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="路径_2411" x="0" y="0" width="412" height="178" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-3"/>
+      <feFlood flood-color="#b0c6ec" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path id="路径_2415-2" data-name="路径 2415" class="cls-1" d="M8,0H368a8.249,8.249,0,0,1,8,8.478V133.522A8.249,8.249,0,0,1,368,142H8a8.249,8.249,0,0,1-8-8.478V8.478A8.249,8.249,0,0,1,8,0Z" transform="translate(19 94)"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path id="路径_2416-2" data-name="路径 2416" class="cls-2" d="M8,0H368a8.249,8.249,0,0,1,8,8.478V133.522A8.249,8.249,0,0,1,368,142H8a8.249,8.249,0,0,1-8-8.478V8.478A8.249,8.249,0,0,1,8,0Z" transform="translate(19 94)"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="组_3392" data-name="组 3392" transform="translate(-1 -79)">
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 1, 79)">
+      <path id="路径_2411-2" data-name="路径 2411" class="cls-2" d="M8,0H368a8.249,8.249,0,0,1,8,8.478V133.522A8.249,8.249,0,0,1,368,142H8a8.249,8.249,0,0,1-8-8.478V8.478A8.249,8.249,0,0,1,8,0Z" transform="translate(18 15)"/>
+    </g>
+    <g id="蒙版组_16" data-name="蒙版组 16" class="cls-3">
+      <path id="路径_2413" data-name="路径 2413" class="cls-4" d="M-28.5,229s86.5-24.5,133-4c49.5,13,92.5-2.5,123,0s91.5,13,111,4,65.5-26.5,84-13.5,23.5,42,23.5,42l-479.5-9Z" transform="translate(1 -2)"/>
+    </g>
+    <g id="蒙版组_17" data-name="蒙版组 17" class="cls-5">
+      <path id="路径_2414" data-name="路径 2414" class="cls-6" d="M-28.13,229s92.9-24.5,142.847-4c53.165,13,99.348-2.5,132.106,0s98.274,13,119.218,4,70.349-26.5,90.219-13.5,25.24,42,25.24,42l-515-9Z" transform="translate(38 -2)"/>
+    </g>
+  </g>
+</svg>
