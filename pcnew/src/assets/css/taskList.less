@@ -1,0 +1,1056 @@
+/*任务列表公共*/
+
+/*任务列表*/
+.task-list {
+  width: 100%;
+  /*最小1150*/
+  @media screen and (min-width: 1150px) {
+    .task-search {
+      .search-input {
+      }
+    }
+
+    .task-content {
+      .task-list-ul {
+        .task-list-li {
+          width: 32%;
+          height: 150px;
+        }
+        .task-list-li:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+
+  /*700 - 1025*/
+  @media screen and (min-width: 700px) and  (max-width: 1149px) {
+    .task-search {
+
+      .search-input {
+
+      }
+    }
+
+    .task-content {
+      .task-list-ul {
+        .task-list-li {
+          width: 48%;
+          min-width: 300px;
+        }
+
+        .task-list-li:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  /*小于700*/
+  @media screen and  (max-width: 699px) {
+    .task-search {
+
+      .search-input {
+        min-width: 80%;
+        max-width: 100%;
+      }
+    }
+
+    .task-content {
+      .task-list-ul {
+        .task-list-li {
+          width: 80%;
+          min-width: 300px;
+        }
+      }
+    }
+  }
+
+
+  /*任务列表*/
+
+  .task-content {
+    width: 100%;
+    //height: 420px;
+    //padding: 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+    .task-list-ul {
+      width: 100%;
+
+      .task-list-li {
+        float: left;
+        //width: 32%;
+        //width: 360px;
+        box-sizing: border-box;
+        //height: 156px;
+        box-shadow: 0 2px 12px rgba(48, 49, 51, 0.1);
+        border-radius: 4px;
+        border-left-width: 6px;
+        border-left-style: solid;
+        margin-bottom: 20px;
+        //margin-right: 20px;
+        padding: 10px;
+        font-size: 14px;
+        vertical-align: middle;
+        margin-right: 2%;
+        cursor: pointer;
+        position: relative;
+
+        .name {
+          width: 83%;
+          color: #303133;
+          font-weight: 500;
+          line-height: 24px;
+          padding: 0;
+          text-overflow: ellipsis; /*文字隐藏后添加省略号*/
+          //width: 20em;/*不允许出现半汉字截断*/
+          -webkit-line-clamp:2;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+
+          .new-task {
+            width: 40px;
+            //display: none;
+            color: #F56C6C;
+            position: absolute;
+            top:10px;
+            right: 15px;
+            //margin-left: 15px;
+          }
+        }
+
+        .option {
+          height: 50px;
+          line-height: 50px;
+          vertical-align: middle;
+          padding: 0;
+          overflow: hidden;
+
+          .left {
+            float: left;
+            width: 60%;
+            .task-option{
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            .hot-level {
+              display: inline-block;
+              margin-left: 10px;
+
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+
+          .right {
+            float: left;
+            width: 40%;
+            text-align: right;
+            font-size: 18px;
+            color: #909399;
+
+
+            i {
+              font-size: 20px;
+              color: #C0C4CC;
+              font-weight: 600;
+              cursor: pointer;
+            }
+            .goDetail{
+              //font-weight: bolder;
+              color: #B2BCCC;
+              //width: 10px;
+              //height: 16px;
+            }
+            span{
+              font-weight: 500;
+            }
+            .status{
+              font-size: 18px;
+              //font-weight: bold;
+            }
+          }
+        }
+
+        .task-time {
+          width: 92%;
+          height: 28px;
+          border-radius: 4px;
+          line-height: 28px;
+          font-size: 12px;
+          white-space: nowrap;
+          padding: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          //float: left;
+          //width: 100%;
+        }
+
+        .create-time {
+          font-size: 14px;
+          line-height: 28px;
+          font-weight: 500;
+          color: #B2BCCC;
+        }
+
+      }
+
+      //角色的颜色
+      .border-orange {
+        border-left-color: #FFAA00;
+
+        .task-option {
+          color: #FFAA00;
+        }
+      }
+
+      .border-purple {
+        border-left-color: #7086B3;
+
+        .task-option {
+          color: #7086B3;
+        }
+      }
+
+      .border-green {
+        border-left-color: #86D5A3;
+
+        .task-option {
+          color: #86D5A3;
+        }
+      }
+
+      .border-red {
+        border-left-color: #F56C6C;
+
+        .task-option {
+          color: #F56C6C;
+        }
+        //
+        //.status {
+        //  color: #F56C6C;
+        //}
+
+
+      }
+      //火花的颜色
+      .hot-black {
+        color: #303133;
+      }
+      .hot-red {
+        color: #F56C6C;
+      }
+
+      .hot-blue {
+        color: #5EA9E8;
+      }
+
+      .hot-orange {
+        color: #FF9C2B;
+      }
+      //时间的颜色
+      .time-red {
+        background: linear-gradient(96deg, rgba(255, 255, 255, 1) 0%, rgba(255, 235, 235, 1) 100%);
+        color: #F56C6C;
+      }
+
+      .time-blue {
+        background: linear-gradient(96deg, rgba(255, 255, 255, 1) 0%, rgba(223, 238, 255, 1) 100%);
+        color: #0082EF;
+      }
+
+      .time-grey {
+        color: #909399;
+        background: linear-gradient(96deg, rgba(255, 255, 255, 1) 0%, rgba(232, 232, 232, 1) 100%);
+      }
+      .time-green{
+        color: #67C23A;
+        background:linear-gradient(96deg,rgba(255,255,255,1) 0%,rgba(230,249,222,1) 100%);
+      }
+      //状态的颜色
+      .status-green{
+        color: #67C23A;
+      }
+      .status-red{
+        color: #F56C6C;
+      }
+      .status-grey{
+        color: #909399;
+      }
+      .status-blue{
+        color: #0082EF;
+      }
+    }
+  }
+}
+
+/*任务详情*/
+.task-detail {
+
+  .btn-option {
+    display: none;
+  }
+
+  .red {
+    color: #F56C6C;
+  }
+
+  .blue {
+    color: #5EA9E8;
+  }
+
+  .purple {
+    color: #7086B3;
+  }
+
+  .statusGreen {
+    color: #86D5A3;
+  }
+
+  .orange {
+    color: #FF9C2B;
+  }
+
+  .green {
+    color: #67C23A;
+  }
+
+  .barGreen {
+    border-color: #A2EC90;
+    color: #67C23A;
+
+    .layui-progress-bar {
+      background-color: #67C23A;
+    }
+  }
+
+  .barGrey {
+    border-color: #C0C4CC;
+    color: #C0C4CC;
+
+    .layui-progress-bar {
+      background-color: #fff;
+    }
+  }
+
+  .barBlue {
+    border-color: #97CFFF;
+    color: #269CFF;
+
+    .layui-progress-bar {
+      background-color: #269CFF;
+    }
+  }
+
+
+  .btn-text {
+    height: 20px;
+    color: #0082EF;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #0082EF;
+    margin-left: 20px;
+  }
+
+  .task-detail-title {
+    width: 100%;
+    height: 22px;
+    //line-height: 50px;
+    box-sizing: border-box;
+    color: #303133;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 4px solid #0082EF;
+    margin: 14px 0;
+    padding-left: 10px;
+  }
+
+  .file-status {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 30px;
+    //color: #DCDCDC;
+  }
+
+  .task-detail-content, .task-detail-plan, .task-detail-subTask, .task-detail-schedule {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 10px 20px;
+    background-color: #fff;
+  }
+
+  /*1200- 1920 */
+  @media screen and (min-width: 1200px) {
+
+    .schedule-file-list {
+      width: 50% !important;
+    }
+
+
+  }
+
+  /*小于1200*/
+  @media screen and (max-width: 1199px) {
+    .schedule-file-list {
+      width: 100% !important;
+    }
+  }
+
+  //任务内容
+  .task-detail-content {
+    .task-name-box {
+      height: 50px;
+      line-height: 50px;
+      font-size: 15px;
+
+      .task-status {
+        margin-right: 10px;
+
+        i {
+          margin-right: 5px;
+        }
+
+        .tag-img {
+          width: 14px;
+          height: 14px;
+          margin-top: -2px;
+          margin-right: 5px;
+        }
+      }
+      .task-name{
+        color: #333;
+        margin-left: 10px;
+      }
+    }
+    .task-describe-box{
+      width: 100%;
+      padding: 13px 0;
+      span{
+        display: inline-block;
+        width:65px;
+        text-align: right;
+        //padding-right: 8px;
+        color: #909399;
+      }
+
+    }
+    .task-describe {
+      display: inline-block;
+      //padding: 13px 65px;
+      line-height: 24px;
+      color: #333;
+      font-size: 14px;
+      padding-right: 65px;
+      white-space: pre-wrap;
+      vertical-align: text-top;
+      margin-left: 10px;
+      //margin-left: 70px;
+      width: 80%;
+      word-break: break-all;
+    }
+
+    .task-content-progress {
+      font-size: 15px;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      vertical-align: middle;
+      margin-bottom: 10px;
+
+      span {
+        display: inline-block;
+        width: 65px;
+        height: 28px;
+        line-height: 28px;
+        vertical-align: middle;
+        text-align: right;
+        //padding-right: 10px;
+      }
+
+      .layui-progress {
+        width: 80%;
+        display: inline-block;
+        height: 28px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        background-color: #fff;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      .layui-progress-bar {
+        height: 26px;
+        border-radius: 3px;
+        top: 1px;
+        left: 0;
+        //left: 1px;
+      }
+    }
+  }
+
+  //任务安排
+  .task-detail-plan {
+    .task-plan-people-box {
+      .plan-people {
+        float: left;
+        width: 80%;
+        margin-right: 3%;
+        font-size: 14px;
+        //height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 3px;
+        }
+
+        .people-title {
+          display: inline-block;
+          vertical-align: middle;
+          height: 32px;
+          line-height: 32px;
+          color: #909399;
+        }
+
+        .people-list-box {
+          font-size: 14px;
+          display: inline-block;
+          width: 80%;
+          position: relative;
+          cursor: pointer;
+          vertical-align: middle;
+
+
+          i {
+            width: 8px;
+            height: 13px;
+            color: #B4BCCC;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            line-height: 13px;
+          }
+
+          .copy-people-count {
+            position: absolute;
+            right: 28px;
+            top: 7px;
+            line-height: normal;
+          }
+        }
+
+        .copy-people {
+          display: block;
+          width: 100%;
+          //padding-right: 45px;
+          height: 32px;
+          line-height: 32px;
+          box-sizing: border-box;
+          padding: 0 75px 0 8px;
+          //border: 1px solid rgba(235, 238, 245, 1);
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(220, 223, 230, 1);
+          border-radius: 4px;
+          //border-radius: 3px;
+          color: #0082EF;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+
+      }
+
+      .plan-people:nth-child(1) {
+        .people-list {
+          color: #FFAA00;
+        }
+
+        .people-title {
+          color: #FFAA00;
+        }
+
+        .people-list-box {
+          cursor: default;
+        }
+      }
+
+      .plan-people:nth-child(2) {
+        .people-list ,.people-title{
+          color: #86D5A3;
+        }
+
+      }
+
+      .plan-people:nth-child(3) {
+        margin-right: 0;
+
+        .people-list,.people-title {
+          color: #7086B3;
+        }
+      }
+
+    }
+
+    .task-plan-time {
+      width: 100%;
+      //margin-left: 70px;
+      margin-left: 10px;
+      height: 50px;
+      line-height: 50px;
+      overflow: hidden;
+      color: #909399;
+
+      .time-box {
+        display: inline-block;
+        position: relative;
+        margin-left: 10px;
+        min-width: 200px;
+        //width: 20%;
+
+        i {
+          position: absolute;
+          top: 20px;
+          right: 10px;
+          color: #B4BCCC;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding-right: 30px;
+      }
+    }
+    @media screen and (max-width: 1025px) {
+      .plan-file{
+        .plan-file-list{
+          width: 100% !important;
+        }
+      }
+    }
+    .plan-file {
+      width: 100%;
+      min-height: 60px;
+      overflow: hidden;
+
+      .plan-file-list {
+        float: left;
+        width: 40%;
+        margin-left: 70px;
+        vertical-align: bottom;
+        height: 60px;
+        margin-top: 10px;
+
+        .file-icon {
+          width: 32px;
+          height: 32px;
+        }
+
+        .file-name {
+          color: #303133;
+          font-size: 14px;
+          vertical-align: bottom;
+          max-width: 50%;
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .btn-text {
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+
+  //  子任务
+  .task-detail-subTask {
+    .subTask-list {
+      width: 100%;
+      box-sizing: border-box;
+      padding-right: 15px;
+
+      .subTask-li {
+        width: 100%;
+        //height: 126px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(241, 248, 255, 1) 100%);
+        border-left: 4px solid #269CFF;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 10px;
+        //margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        .subTask-name {
+          color: #303133;
+          font-size: 16px;
+          position: relative;
+          margin-bottom: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+
+          .right {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            width: 8px;
+            height: 13px;
+            color: #B4BCCC;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+
+        .subTask-describe {
+          font-size: 14px;
+          color: #606266;
+          line-height: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; //行数
+          -webkit-box-orient: vertical;
+          margin-bottom: 10px;
+        }
+
+        .list-icon {
+          font-size: 12px;
+          color: #606266;
+        }
+      }
+    }
+  }
+
+
+
+  //任务文件
+  .task-detail-file-list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 10px 20px;
+    background-color: #fff;
+
+    .search-input {
+      width: 100%;
+      float: right;
+      text-align: right;
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      vertical-align: middle;
+
+      .search-group {
+        text-align: left;
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        width: 30%;
+
+        img {
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          top: 17px;
+          right: 15px;
+        }
+
+        input {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    .file-table {
+      width: 100%;
+    }
+  }
+
+}
+
+/*时间弹窗*/
+.start-window {
+  display: none;
+}
+
+/*开始任务、结束任务弹窗*/
+.start-content, .end-content {
+  .start-title {
+    font-size: 16px;
+    color: #303233;
+    line-height: 50px;
+  }
+
+  .start-radio, .end-radio {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+
+    label {
+      font-size: 14px;
+      color: #606266;
+      font-weight: 400;
+      display: inline-block;
+      width: 40%;
+      text-align: center;
+    }
+
+    input {
+      margin-right: 3px;
+    }
+  }
+
+  .checked {
+    color: #0082EF !important;
+  }
+
+  .time-box {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    i {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #B4BCCC;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding-right: 30px;
+    }
+  }
+
+  .start-timing {
+    //opacity: 0;
+  }
+
+}
+
+/*更新进度弹窗*/
+.update-progress {
+  display: none;
+}
+
+.update-progress-content {
+  .icon-img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .greyFont {
+    color: #C0C4CC;
+  }
+
+  .greenFont {
+    color: #67C23A;
+  }
+
+  .progress-title {
+    font-size: 16px;
+    color: #303233;
+    line-height: 50px;
+
+    span {
+      color: #C0C4CC;
+    }
+  }
+
+  .group-radio {
+    width: 100%;
+    line-height: 50px;
+
+    label {
+      font-size: 14px;
+      color: #606266;
+      font-weight: 400;
+      margin-right: 80px;
+    }
+
+    input {
+      margin-right: 3px;
+    }
+
+  }
+
+  .checked {
+    color: #0082EF !important;
+  }
+
+  .area-box {
+    position: relative;
+  }
+
+  //进度-上传
+  .progress-upload {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    //min-height: 50px;
+
+    .upload-annex {
+      line-height: 50px;
+
+      span {
+        margin-right: 24px;
+      }
+    }
+
+    #fileList {
+      width: 100%;
+    }
+
+    .plan-file-list {
+      float: left;
+      width: 60%;
+      margin-left: 30px;
+      vertical-align: middle;
+      height: 28px;
+      margin-top: 10px;
+      background-color: #F5F7FA;
+      line-height: 28px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      position: relative;
+      border-radius: 2px;
+
+      .file-icon {
+        width: 19px;
+        height: 19px;
+        vertical-align: middle;
+      }
+
+      .file-name {
+        color: #606266;
+        font-size: 12px;
+        vertical-align: bottom;
+        max-width: 80%;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .file-status-icon {
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+
+      .greyFont {
+        display: none;
+        cursor: pointer;
+      }
+
+    }
+
+    .plan-file-list:last-child {
+      margin-bottom: 10px;
+    }
+
+    .plan-file-list:hover {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(229, 242, 254, 1);
+      box-shadow: 0 2px 4px rgba(48, 49, 51, 0.08);
+    }
+
+    .upload-box {
+      width: 100%;
+
+
+      .uploadFile, .uploadFile2 {
+        width: 80%;
+        height: 142px;
+        vertical-align: middle;
+        background-color: #FFFFFF;
+
+        img {
+          width: 65px;
+          height: 65px;
+        }
+
+        .tips {
+          color: #DCDFE6;
+          margin: 10px 0;
+        }
+      }
+    }
+
+  }
+
+  .progress-people {
+
+    .people-num {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .people-count {
+      color: #0082EF;
+      padding: 5px;
+    }
+
+    .clear-select {
+      color: #0082EF;
+      cursor: pointer;
+      float: right;
+    }
+
+    .people-list {
+      margin-top: 20px;
+      width: 100%;
+      min-height: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #e6e6e6;
+      line-height: 1.3;
+      background-color: #fff;
+      border-radius: 2px;
+
+      li {
+        background-color: #F5F5F5;
+        width: auto;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #2D3034;
+        padding: 0 10px;
+        border-radius: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        .layui-icon {
+          font-size: 14px;
+          color: #909499;
+          margin-left: 10px;
+        }
+      }
+
+    }
+  }
+
+}

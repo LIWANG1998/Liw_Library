@@ -1,0 +1,334 @@
+/* 首页 */
+.home-page {
+  .home-page-top, .urgent-need, .statistics-total {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .section-title{
+    width: calc(100% - 40px);
+    margin: 18px 20px;
+  }
+  .home-page-top {
+    padding: 20px;
+    .enc-words {
+      width: 100%;
+      height: 126px;
+      background-image: url("../images/homePage/encourWordsBg.png");
+      background-size: 100% 126px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0 auto;
+        width: 40%;
+        padding-right: 10%;
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        box-sizing: content-box;
+
+        span {
+          font-family: SimHei;
+          position: absolute;
+          left: -50px;
+          top: -10px;
+          font-size: 30px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .welcome-words-box {
+      .welcome-words {
+        color: #626266;
+        font-size: 16px;
+        margin: 20px 0;
+        font-weight: 500;
+
+        span {
+          font-weight: bold;
+          color: #2D3034;
+          font-size: 24px;
+          margin-right: 10px;
+        }
+      }
+
+      .deal-num {
+        width: 100%;
+        height: 40px;
+        background: #F4F7F9;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 10px;
+        img{
+          width: 18px;
+          margin-right: 10px;
+        }
+        span{
+          strong{
+            font-style: normal;
+            color: #0082ef;
+            //font-weight: 500;
+          }
+        }
+        .close {
+          cursor: pointer;
+         color: #D2D2D2;
+          font-size: 12px;
+          position: absolute;
+          top: 14px;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  /*任务统计*/
+  .statistics-total{
+    .statistics-filter{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      margin: 10px 0;
+      .label-title{
+        font-size: 15px;
+        font-weight: 500;
+        color: #303133;
+        margin-right: 30px;
+      }
+      .search-tips{
+        color: #909399;
+        font-size: 14px;
+        //margin-left: 10px;
+      }
+    }
+    .content{
+      .title{
+        line-height: 50px;
+      }
+    }
+  }
+
+}
+
+/*汇总排行榜*/
+.ranking-list{
+  .section-title{
+    width: calc(100% - 40px);
+    margin: 18px auto;
+  }
+  .content,.data-charts{
+    width: 100%;
+    padding: 20px;
+  }
+  .data-charts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .data-charts-card{
+      width: calc(50% - 28px);
+      height: 280px;
+      margin-bottom: 30px;
+      min-width: 400px;
+      background-color: #fff;
+      box-shadow: 0 2px 12px rgba(48, 49, 51, 0.1);
+      border-radius: 4px;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      .data-charts-title{
+        height: 38px;
+        width: 100%;
+        line-height: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .data-charts-title > span{
+        color: #303133;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/*逾期排行榜*/
+.overdue {
+
+  /* 1920 */
+  @media screen and (min-width: 1368px) {
+    .overdue-item {
+      width: 31%;
+    }
+
+    .overdue-item:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  }
+  /*1280 1366*/
+  @media screen and (min-width: 1026px) and (max-width: 1367px) {
+    .overdue-item {
+      width: 47%;
+    }
+
+    .overdue-item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  /*小于1026*/
+  @media screen and (max-width: 1026px) {
+    .overdue-item {
+      width: 47%;
+    }
+
+    .overdue-item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .overdue-content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background-color: #fff;
+
+    .overdue-list {
+      width: 100%;
+      min-width: 31%;
+      height: auto;
+
+      .overdue-item {
+        height: 115px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 2px 12px rgba(48, 49, 51, 0.1);
+        border-radius: 4px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        .name, .overdue-times, .last-time {
+          width: 100%;
+          padding: 0 10px;
+          box-sizing: border-box;
+        }
+
+        .name {
+          font-size: 16px;
+          color: #000;
+          line-height: 22px;
+          font-family: PingFang SC;
+          font-weight: 500;
+          margin-top: 10px;
+        }
+
+        .overdue-times {
+          text-align: right;
+
+          span {
+            color: #F56C6C;
+            font-size: 18px;
+            line-height: 14px;
+            font-weight: 500;
+            margin-right: 5px;
+          }
+
+          .goDetail {
+            color: #C0C4CC;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 14px;
+          }
+        }
+
+        .last-time {
+          font-size: 14px;
+          color: #909399;
+          line-height: 30px;
+        }
+
+        .overdue-level {
+          height: 30px;
+          background: rgba(255, 255, 255, 1);
+          box-shadow: 0px -1px 0px rgba(145, 145, 145, 0.1);
+          opacity: 1;
+          border-radius: 0 0 4px 4px;
+          line-height: 30px;
+          padding: 0 10px;
+
+          .overdue-level-item {
+            margin-top: 5px;
+            width: 14px;
+            height: 20px;
+            background-color: #F56C6C;
+            margin-left: 4px;
+            float: left;
+
+          }
+
+          .overdue-level-item:nth-child(1) {
+            opacity: 0.1;
+          }
+
+          .overdue-level-item:nth-child(2) {
+            opacity: 0.2;
+          }
+
+          .overdue-level-item:nth-child(3) {
+            opacity: 0.3;
+          }
+
+          .overdue-level-item:nth-child(4) {
+            opacity: 0.4;
+          }
+
+          .overdue-level-item:nth-child(5) {
+            opacity: 0.5;
+          }
+
+          .overdue-level-item:nth-child(6) {
+            opacity: 0.6;
+          }
+
+          .overdue-level-item:nth-child(7) {
+            opacity: 0.7;
+          }
+
+          .overdue-level-item:nth-child(8) {
+            opacity: 0.8;
+          }
+
+          .overdue-level-item:nth-child(9) {
+            opacity: 0.9;
+          }
+
+          .overdue-level-item:nth-child(10) {
+            opacity: 1;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+//筛选条件的搜索
+.btn-home-search{
+  width: 100px;
+  //height: 38px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 30px;
+  //font-size: 16px;
+}

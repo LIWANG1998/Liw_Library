@@ -1,0 +1,1129 @@
+/*发起任务*/
+.add-task {
+  width: 100%;
+  @media screen and (max-width: 1025px) {
+    .plan-file {
+      .plan-file-list {
+        width: 80% !important;
+      }
+
+      .plan-file-list:nth-child(even) {
+        margin-left: 30px !important;
+      }
+    }
+  }
+
+  #optionBtn {
+    button {
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+  }
+
+  .people-title {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    width: 70px;
+  }
+
+  .task-detail-title {
+    width: calc(100% - 40px);
+    height: 22px;
+    //line-height: 50px;
+    box-sizing: border-box;
+    color: #303133;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 4px solid #0082EF;
+    margin: 14px 20px;
+    padding-left: 10px;
+  }
+
+
+  .greyFont {
+    color: #909399;
+  }
+
+  .greenFont {
+    color: #67C23A;
+  }
+
+  .red {
+    color: #F56C6C;
+  }
+
+  .icon-img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .add-task-content {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #303133;
+    background-color: #fff;
+  }
+
+  /*任务内容*/
+
+  .add-task-content {
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .section-title {
+      width: calc(100% - 40px);
+      margin: 18px auto;
+    }
+
+    .ant-form-item {
+      padding: 0 20px;
+      margin-bottom: 20px;
+
+      .ant-form-item {
+        padding: 0;
+        display: inline-block;
+        margin-bottom: 0;
+        color: #303133;
+      }
+    }
+    .switch-name{
+      color: #303133;
+    }
+
+    .ant-form-item-required {
+      color: #303133;
+    }
+
+    .ant-form-item-label > label::after {
+      content: "";
+    }
+
+    .label-icon {
+      position: absolute;
+      top: 0;
+      left: -75px;
+    }
+
+    .label-icon-upload {
+      position: absolute;
+      //top: 12px;
+      top: 2px;
+      left: -58px;
+    }
+
+    /*发起人抄送人接收人*/
+
+    .ant-form-item:nth-child(7) {
+      label {
+        color: #FFAA00;
+      }
+
+      .ant-form-item-required::before {
+        position: absolute;
+        top: 0;
+        left: -30px;
+      }
+    }
+
+    .ant-form-item:nth-child(9) {
+      label {
+        color: #7086B3;
+      }
+
+      .ant-form-item-required::before {
+        position: absolute;
+        top: 0;
+        left: -30px;
+      }
+    }
+
+    .ant-form-item:nth-child(8) {
+      label {
+        color: #86D5A3;
+      }
+
+      .ant-form-item-required::before {
+        position: absolute;
+        top: 0;
+        left: -30px;
+      }
+    }
+
+    .people-list-box {
+      font-size: 14px;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      vertical-align: middle;
+
+      .copy-people {
+        display: block;
+        width: 100%;
+        //padding-right: 45px;
+        height: 32px;
+        line-height: 32px;
+        box-sizing: border-box;
+        padding: 0 75px 0 8px;
+        //border: 1px solid rgba(235, 238, 245, 1);
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(220, 223, 230, 1);
+        border-radius: 4px;
+        //border-radius: 3px;
+        color: #0082EF;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+
+      i {
+        width: 8px;
+        height: 13px;
+        color: #B4BCCC;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        line-height: 13px;
+      }
+
+      .copy-people-count {
+        position: absolute;
+        right: 20px;
+        top: 7px;
+        line-height: normal;
+      }
+    }
+
+    .notice-type-desc {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+
+    /*子任务*/
+
+    .addSubTask {
+      float: right;
+      margin-top: -5px;
+    }
+
+    .subTask-list {
+      width: calc(100% - 54px);
+      box-sizing: border-box;
+      padding-right: 15px;
+      //margin-top: 10px;
+      margin: 20px 20px 20px 34px;
+      //display: none;
+
+      .subTask-li {
+        width: 100%;
+        //height: 126px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(241, 248, 255, 1) 100%);
+        border-left: 4px solid #269CFF;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        //background:linear-gradient(96deg,rgba(255,255,255,1) 0%,rgba(241,248,255,1) 100%);
+        .subTask-name {
+          width: 100%;
+
+          .left {
+            width: 80%;
+            color: #303133;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+            margin: 0;
+            margin-bottom: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            float: left;
+          }
+
+          .right {
+            width: 20%;
+            text-align: right;
+            float: right;
+            color: #B4BCCC;
+            font-weight: 500;
+
+            span {
+              margin-left: 10px;
+              cursor: pointer;
+            }
+
+            .editSubTask {
+              color: #0082EF;
+            }
+          }
+        }
+
+        .subTask-describe {
+          width: 80%;
+          font-size: 14px;
+          color: #606266;
+          line-height: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; //行数
+          -webkit-box-orient: vertical;
+          margin-bottom: 10px;
+        }
+
+        .list-icon {
+          font-size: 12px;
+          color: #606266;
+
+          .list-count {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  //进度
+  .task-detail-schedule {
+    .task-detail-title {
+      vertical-align: middle;
+
+      .title {
+        float: left;
+        width: 50%;
+      }
+
+      .search-input {
+        height: 32px;
+        width: 50%;
+        float: left;
+        text-align: right;
+
+        .search-group {
+          text-align: left;
+          position: relative;
+          vertical-align: middle;
+          display: inline-block;
+          max-width: 70%;
+          min-width: 50%;
+
+          img {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 9px;
+            right: 15px;
+          }
+
+          input {
+            padding-right: 30px;
+          }
+        }
+
+        .search-btn {
+          margin-left: 20px;
+        }
+      }
+    }
+
+
+    .task-schedule-ul {
+      width: calc(100% - 54px);
+      box-sizing: border-box;
+      padding-right: 15px;
+      margin: 20px 20px 20px 34px;
+
+      .task-schedule-li {
+        width: 100%;
+        border-bottom: 1px solid rgba(245, 247, 250, 1);
+        padding-bottom: 10px;
+
+        .person-info {
+          height: 50px;
+          line-height: 50px;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+          }
+
+          .user-name {
+            font-size: 14px;
+            color: #303133;
+            margin-left: 10px;
+          }
+
+          .file-status {
+            margin-left: 30px;
+          }
+        }
+
+        .schedule-desc {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 80px;
+          color: #606266;
+          line-height: 25px;
+
+          span {
+            font-size: 14px;
+            //color: #dcdcdc;
+            color: #909399;
+          }
+        }
+
+        .schedule-file {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 80px;
+
+          .schedule-file-list {
+            width: 50%;
+            float: left;
+            font-size: 14px;
+            color: #303133;
+            margin-bottom: 20px;
+
+            .top {
+              height: 50px;
+              line-height: 50px;
+            }
+
+            .file-icon {
+              width: 32px;
+              height: 32px;
+            }
+
+            .file-name {
+              margin-left: 10px;
+              vertical-align: bottom;
+              max-width: 80%;
+              display: inline-block;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+
+
+            .bottom {
+              font-size: 12px;
+              color: #909399;
+
+              .upload-time {
+                margin-left: 30px;
+              }
+
+              .btn-text-underline {
+                height: 20px;
+                color: #0082EF;
+                background-color: #fff;
+                border: none;
+                border-bottom: 1px solid #0082EF;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*文件上传列表*/
+
+  .plan-file {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .plan-file-list {
+      width: 40%;
+      vertical-align: middle;
+      height: 28px;
+      margin-top: 10px;
+      background-color: #F5F7FA;
+      line-height: 28px;
+      box-sizing: border-box;
+      padding: 0 60px 0 10px;
+      position: relative;
+      border-radius: 2px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      .file-icon {
+        width: 19px;
+        height: 19px;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+
+      .file-name {
+        color: #606266;
+        font-size: 12px;
+        vertical-align: bottom;
+        max-width: 80%;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 500;
+      }
+
+      .file-status-icon {
+        font-size: 12px;
+        position: absolute;
+        top: 8px;
+        font-style: normal;
+        cursor: pointer;
+        right: 10px;
+      }
+
+      .see {
+        top: 3px;
+        right: 45px;
+      }
+
+      .download {
+        top: 3px;
+      }
+
+      .greyFont {
+        display: none;
+      }
+
+      .blueFont {
+        color: #0082EF;
+        right: 40px;
+      }
+
+      .greyFont {
+        color: #B4BCCC;
+        right: 10px;
+      }
+
+
+    }
+
+    //.plan-file-list:nth-child(even) {
+    //  margin-left: 70px;
+    //}
+
+    .plan-file-list:hover {
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(229, 242, 254, 1);
+      box-shadow: 0 2px 4px rgba(48, 49, 51, 0.08);
+
+      .greyFont {
+        display: inline-block;
+      }
+
+      .greenFont {
+        display: none;
+      }
+    }
+  }
+}
+
+/*任务详情*/
+
+.task-detail {
+
+  .btn-option {
+    display: none;
+  }
+
+  .red {
+    color: #F56C6C;
+  }
+
+  .blue {
+    color: #5EA9E8;
+  }
+
+  .purple {
+    color: #7086B3;
+  }
+
+  .statusGreen {
+    color: #86D5A3;
+  }
+
+  .orange {
+    color: #FF9C2B;
+  }
+
+  .green {
+    color: #67C23A;
+  }
+
+  .barGreen {
+    border-color: #A2EC90;
+
+    .progress-text {
+      color: #67C23A;
+    }
+
+    .progress-bar {
+      background-color: #67C23A;
+    }
+  }
+
+  .barGrey {
+    border-color: #C0C4CC;
+
+    .progress-text {
+      color: #C0C4CC;
+    }
+
+    .progress-bar {
+      background-color: #fff;
+    }
+  }
+
+  .barBlue {
+    border-color: #97CFFF;
+
+    .progress-text {
+      color: #269CFF;
+    }
+
+    .progress-bar {
+      background-color: #269CFF;
+    }
+  }
+
+
+  .btn-text {
+    height: 20px;
+    color: #0082EF;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #0082EF;
+    margin-left: 20px;
+  }
+
+  .task-detail-title {
+    width: 100%;
+    height: 22px;
+    //line-height: 50px;
+    box-sizing: border-box;
+    color: #303133;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 4px solid #0082EF;
+    margin: 14px 0;
+    padding-left: 10px;
+  }
+
+  .file-status {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 30px;
+    //color: #DCDCDC;
+  }
+
+  .task-describe{
+    margin-left: 10px;
+    ul,ul li{
+      list-style: disc;
+    }
+    ol,ol li{
+
+      list-style:decimal;
+    }
+  }
+
+  /*1300- 1920 */
+  @media screen and (min-width: 1300px) {
+
+    .schedule-file-list {
+      width: 50% !important;
+    }
+
+
+  }
+
+  /*小于1300*/
+  @media screen and (max-width: 1299px) {
+    .schedule-file-list {
+      width: 100% !important;
+    }
+
+  }
+
+  //任务内容
+
+  .progress-box {
+    width: 99%;
+    display: inline-block;
+    height: 28px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #fff;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 1px;
+    position: relative;
+
+    .progress-bar {
+      height: 24px;
+      border-radius: 3px;
+    }
+
+    .progress-text {
+      line-height: 26px;
+      font-size: 14px;
+      font-weight: 500;
+      position: absolute;
+      right: -50px;
+      top: 0;
+    }
+  }
+
+}
+
+/*通知模式弹窗*/
+.notice-window {
+  width: 100%;
+
+  .notice-list {
+    li {
+      width: 100%;
+      height: 48px;
+      background: #F5F7FA;
+      box-sizing: border-box;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #303133;
+      font-weight: 500;
+    }
+
+    hr {
+      height: 1px;
+      background-color: #B2BCCC;
+      margin-bottom: 10px;
+      border: none;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .notice-repeat {
+    width: 100%;
+    background-color: #F5F7FA;
+    box-sizing: border-box;
+    padding: 0 10px;
+
+    .notice-repeat-item {
+      display: flex;
+      color: #303133;
+      font-weight: 500;
+      justify-content: flex-start;
+      border-top: 1px dashed #D5D8DE;
+      padding: 10px 0;
+
+      .left {
+        flex: 1;
+      }
+
+      .right {
+        flex: 5;
+
+        .ant-radio-button-wrapper {
+          margin-bottom: 10px;
+          background: #E8EBF1;
+          color: #303133;
+          font-weight: 500;
+        }
+
+        .ant-radio-button-wrapper-checked {
+          background: #84C7FF;
+          color: #fff;
+        }
+
+        .ant-select {
+          width: 100px !important;
+        }
+      }
+    }
+  }
+
+  .ant-select {
+    margin-right: 10px;
+  }
+
+  .add-notice-type {
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px auto;
+    //display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .del {
+    color: #F56C6C;
+    cursor: pointer;
+  }
+}
+
+/*上传文件的弹窗*/
+.plan-file-window {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  //min-height: 50px;
+
+  .upload-annex {
+    line-height: 50px;
+
+    .uploadFile {
+      float: right;
+      margin-left: 10px;
+    }
+
+    .label {
+      margin-right: 24px;
+    }
+
+    .icon-img {
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+
+  #fileList {
+    width: 100%;
+  }
+
+  .plan-file-list {
+    float: left;
+    width: 60%;
+    //margin-left: 30px;
+    vertical-align: middle;
+    height: 28px;
+    margin-top: 10px;
+    //background-color: #F5F7FA;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding: 0 60px 0 10px;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-left: 70px;
+
+    .file-icon {
+      width: 19px;
+      height: 19px;
+      vertical-align: middle;
+    }
+
+    .file-name {
+      color: #606266;
+      font-size: 12px;
+      vertical-align: bottom;
+      max-width: 80%;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .file-status-icon {
+      font-size: 12px;
+      position: absolute;
+      top: 0;
+      font-style: normal;
+      cursor: pointer;
+      //right: 10px;
+    }
+
+    .blueFont {
+      color: #0082EF;
+      right: 40px;
+    }
+
+    .greyFont {
+      color: #B4BCCC;
+      right: 10px;
+    }
+
+  }
+
+  /*  .plan-file-list:nth-child(even) {
+      margin-left: 70px;
+    }
+
+      .plan-file-list:hover {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(229, 242, 254, 1);
+        box-shadow: 0 2px 4px rgba(48, 49, 51, 0.08);
+      }*/
+}
+
+.upload-box {
+  width: 100%;
+  margin-left: 70px;
+
+  .uploadFile, .uploadFile2 {
+    width: 80%;
+    height: 116px;
+    margin: 20px 0;
+    vertical-align: middle;
+
+    img {
+      width: 65px;
+      height: 65px;
+      //margin-top: 20px;
+    }
+
+    .tips {
+      color: #DCDFE6;
+      margin: 10px 0;
+    }
+  }
+}
+
+.upload-box-window {
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+/*网盘上传弹窗*/
+
+.net-disk-window {
+  display: none;
+}
+
+.net-disk-content {
+  width: 100%;
+  font-size: 14px;
+  color: #303133;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  .crumbs {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #0082EF;
+
+    .crumbs-content {
+      display: inline-block;
+    }
+
+    .crumbs-list {
+      cursor: pointer;
+    }
+  }
+
+  .disk-file-list {
+    width: 100%;
+    //父级文件列表
+    .disk-folder {
+      width: 100%;
+      min-height: 50px;
+      line-height: 50px;
+      box-shadow: 0 1px 0 rgba(230, 237, 245, 1);
+      position: relative;
+      cursor: pointer;
+
+      .down {
+        display: none;
+      }
+
+      .net-file-icon {
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .net-file-name {
+        margin-left: 5px;
+      }
+
+      .net-file-open {
+        float: right;
+        font-weight: bold;
+        color: #C0C4CC;
+        cursor: pointer;
+      }
+
+      .nert-file-size {
+        color: #C0C4CC;
+        float: right;
+        font-size: 12px;
+      }
+
+      .check-label {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 18px;
+        right: 0;
+      }
+
+      .folder-up {
+        display: none;
+      }
+
+      //父级文件名称
+      .folder-info {
+        height: 50px;
+        line-height: 50px;
+        box-shadow: 0 1px 0 rgba(230, 237, 245, 1);
+
+        .net-file-name {
+          font-weight: bold;
+        }
+      }
+
+      //子集文件列表
+      .disk-child-file {
+        width: 100%;
+        box-sizing: border-box;
+        display: none;
+
+        .disk-child-file-li {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          box-shadow: 0 1px 0 rgba(230, 237, 245, 1);
+          position: relative;
+
+          .content {
+            width: 80%;
+            box-sizing: border-box;
+            padding-left: 70px;
+          }
+        }
+      }
+
+      .content {
+        width: 80%;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*-------------*/
+
+/*开始任务、结束任务弹窗*/
+.start-content, .end-content {
+  .start-title {
+    font-size: 16px;
+    color: #303233;
+    line-height: 50px;
+  }
+
+  .start-radio, .end-radio {
+    width: 100%;
+    text-align: center;
+    //line-height: 50px;
+    label {
+      //width: 50%;
+    }
+
+    .ant-radio-group {
+      display: block;
+    }
+  }
+
+
+  .checked {
+    color: #0082EF !important;
+  }
+
+  .start-timing {
+    margin-top: 20px;
+  }
+
+  .time-box {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+
+  }
+
+}
+
+/*更新进度弹窗*/
+.update-progress-content {
+  .progress-title {
+    font-size: 16px;
+    color: #303233;
+    line-height: 50px;
+
+    span {
+      color: #C0C4CC;
+    }
+  }
+  .area-box {
+    position: relative;
+    margin-top: 20px;
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  //进度-上传
+  .upload-box-window {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .upload-annex {
+      line-height: 50px;
+
+      img {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+      }
+
+      span {
+        margin-right: 24px;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+
+  }
+}
+

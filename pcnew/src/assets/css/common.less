@@ -1,0 +1,887 @@
+/*ant样式修改*/
+/*单选按钮*/
+.ant-radio ,.ant-checkbox{
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.ant-radio-inner,.ant-checkbox-inner {
+  width: 14px;
+  height: 14px;
+  //margin-top: -2px;
+}
+
+.ant-radio-inner::after {
+  top: 2px;
+  left: 2px;
+
+}
+.ant-radio-wrapper-checked,.ant-checkbox-wrapper-checked{
+  span{
+    color: #0082ef;
+  }
+}
+
+span.ant-radio + * ,span.ant-checkbox + * {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.ant-radio-wrapper, .ant-checkbox-wrapper{
+  margin-right: 20px;
+}
+
+.ant-radio-wrapper-checked,.ant-checkbox-wrapper-checked {
+  color: #0082ef;
+}
+.ant-checkbox-checked .ant-checkbox-inner::after{
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+/*单选按钮组*/
+.ant-radio-button-wrapper {
+  margin-right: 30px;
+  height: 32px;
+  background: #F1F2F5;
+  border-radius: 4px;
+  border: none;
+  border-left: none;
+  font-weight: 500;
+  color: #303133;
+  width: 100px;
+  text-align: center;
+}
+
+.ant-radio-button-wrapper:last-child, .ant-radio-button-wrapper:first-child {
+  /* border-radius: 0 4px 4px 0; */
+  border-radius: 4px;
+  border: none;
+}
+
+.ant-radio-button-wrapper:not(:first-child)::before {
+  width: 0;
+}
+
+.ant-radio-button-wrapper-hover {
+  box-shadow: none;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  //background: #84c7ff;
+  //border-color: #84c7ff;
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  box-shadow: none;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  box-shadow: none;
+  border: none;
+}
+
+.ant-radio-button-wrapper:hover {
+  color: #84c7ff;
+}
+
+/*--单选按钮组样式结束---*/
+
+/*分页样式修改*/
+.ant-pagination {
+  li {
+    background: #F0F2F5;
+    border: none;
+    border-radius: 2px;
+
+    a {
+      color: #606266;
+    }
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    background: #F0F2F5;
+    border: none;
+
+    a {
+      color: #606266;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: #0082ef;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+/*分页样式修改结束*/
+
+
+/*开关样式修改*/
+.ant-switch-checked{
+  background-color: #67C23A;//D5D8DE
+}
+/*------开关样式修改结束----------*/
+
+/*按钮样式*/
+.ant-btn-link{
+  color: #0082ef;
+}
+.ant-btn-primary{
+  background-color: #0082ef;
+}
+.ant-btn > i, .ant-btn > span{
+  font-size: 12px;
+}
+/*-------按钮样式结束----------*/
+
+/*表格样式修改*/
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: #F5F7FA;
+  //button{
+  //  color: #B2BCCC;
+  //}
+}
+
+.ant-table-thead > tr > th{
+  background: #F0F2F5;
+}
+/*-----表格样式修改结束----------*/
+
+/*弹窗样式修改*/
+.ant-modal-header{
+  height: 48px;
+  background: #FCFCFC;
+}
+.ant-modal-body{
+  padding: 10px 20px 20px;
+}
+/*-----弹窗样式修改结束--------*/
+/*表单样式修改*/
+.ant-form-item{
+  margin-bottom: 20px;
+}
+/*------表单样式修改结束-----*/
+
+/*----------弹窗样式-----------*/
+.ant-modal-body{
+  max-height: 700px;
+  overflow-y: scroll;
+}
+/*--------弹窗样式结束----------*/
+
+.input-area-limit{
+  textarea{
+    padding-bottom: 15px;
+  }
+  //padding-right: 15px;
+
+  box-sizing: border-box;
+}
+//===================================================//
+
+
+/*公共样式*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "PingFang SC", "Microsoft YaHei", SCHeiti, Helvetica;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+//统计字符
+.count-length{
+  display: inline;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #909399;
+  font-size: 14px;
+  line-height: 20px;
+  z-index: 99;
+  background-color: #fff;
+}
+//页头
+.page-header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #FFFFFF;
+  font-size: 18px;
+  color: #303133;
+  //font-weight: 500;
+  font-weight: bold;
+  div{
+    float: right;
+    position: relative;
+  }
+  button{
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+}
+//页面搜索 输入框
+.action-bar{
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 20px;
+  div{
+    flex: 1;
+  }
+  .search-inp{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .bar-right{
+    text-align: right;
+    button{
+      margin-left: 20px;
+    }
+  }
+}
+//小标题
+.section-title{
+  width: 100%;
+  height:22px;
+  margin: 18px 0;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid #0082ef;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  color: #303133;
+  span{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  div{
+    text-align: right;
+    button{
+      margin-left: 20px;
+    }
+    span{
+      font-size: 12px;
+    }
+  }
+}
+/*任务筛选*/
+.task-search-title{
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  opacity: 1;
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: #0082ef;
+  font-size: 16px;
+  line-height: 50px;
+  .black{
+    color: #303133;
+  }
+  span{
+    cursor: pointer;
+    i{
+      margin-left: 10px;
+    }
+  }
+
+}
+.task-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+
+  .search-content {
+    //width: 50%;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #E8E8E8;
+    .label-span {
+      display: inline-block;
+      width: 70px;
+      font-size: 16px;
+      color: #303133;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+
+    .checked {
+      color: #0082EF;
+    }
+  }
+
+  .search-input {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: right;
+    //button {
+    //  margin-top: -4px;
+    //}
+    .search-group {
+      position: relative;
+      height: 36px;
+      display: inline-block;
+      width: 30%;
+      margin-right: 20px;
+      padding-right: 60px;
+
+      input {
+        width: 100%;
+        height: 36px;
+        box-sizing: border-box;
+        padding-right: 28px;
+      }
+    }
+
+  }
+
+  .search-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+}
+/*-----任务筛选条件结束----*/
+/*按钮样式*/
+.btn {
+  border-radius: 4px;
+  height: 36px;
+  padding: 0 20px;
+  min-width: 79px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn i {
+  margin-right: 6px;
+}
+
+.btn-blue {
+  background: #0078EF;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  color: #303233;
+  border: 1px solid #ccc;
+}
+
+.btn-white:hover {
+  border: 1px solid #0078EF;
+}
+
+.btn-text {
+  font-size: 14px;
+  color: #303233;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-text-blue {
+  font-size: 14px;
+  color: #0078EF;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-text-underline {
+  font-size: 14px;
+  color: #0078EF;
+  height: 20px;
+  padding: 0;
+  border-bottom: 1px solid #0078EF;
+  background: transparent;
+  line-height: 20px;
+  border-radius: 0;
+  cursor: pointer;
+
+}
+
+/*按钮样式结束*/
+
+
+/*弹窗样式*/
+.popWindow {
+  display: none;
+}
+
+.form-data .layui-form-label {
+  padding: 9px 0;
+  width: auto;
+}
+
+.form-data .layui-input-block {
+  margin-left: 70px;
+}
+
+.form-data .layui-input-block {
+  position: relative;
+}
+
+.form-data .word {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.form-data .layui-form-label.layui-required:after {
+  content: "*";
+  color: red;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+}
+
+.uploadIcon {
+  max-height: 65px;
+  max-width: 65px;
+}
+
+.desc {
+  font-size: 12px;
+  color: #C0C4CC;
+}
+
+.people-num {
+  color: #2D3034;
+  height: 36px;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.people-count {
+  color: #0082EF;
+  margin: 0 5px;
+}
+
+.people-list {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  line-height: 1.3;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.people-list li {
+  background-color: #F5F5F5;
+  width: auto;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #2D3034;
+  padding: 0 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.layui-layer-content .people-list li .layui-icon {
+  font-size: 14px;
+  color: #909499;
+  margin-left: 10px;
+}
+
+
+/*弹窗样式结束*/
+
+/*图片充满容器*/
+.imgFit {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*暂无数据*/
+.no-data {
+  font-size: 20px;
+  color: #B4BCCC !important;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.no-data-img {
+  max-width: 400px;
+  /*max-height: 200px;*/
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/*分割盒子*/
+.split-box {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #F5F7FA;
+}
+
+.split-box-thin {
+  padding: 1px 10px;
+}
+
+/*input样式*/
+input::placeholder,
+textarea::placeholder {
+  color: #C0C4CC;
+  font-size: 14px;;
+}
+
+
+/*输入框字数限制*/
+.word {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+/*分页样式开始*/
+.paging {
+  height: 60px;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.paging #paging {
+  float: right;
+}
+
+/*分页样式结束*/
+
+/*头部--设置--弹窗样式*/
+.form-set {
+  width: 100%;
+  min-height: 300px;
+}
+
+.form-set .form-set-item {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-set .form-set-item:last-child {
+  margin-bottom: 10px;
+}
+
+.form-set .left {
+  width: 50px;
+  float: left;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.form-set .required:after {
+  content: "*";
+  color: red;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  line-height: normal;
+  z-index: 999;
+}
+
+.form-set .right {
+  width: 300px;
+  float: left;
+}
+
+.form-set .right img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+/*图片裁剪*/
+.cutImg {
+  min-width: 600px;
+  min-height: 300px;
+}
+
+.cutImg .cut-img-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  float: left;
+  text-align: center;
+  line-height: 300px;
+}
+
+.cutImg .cut-img-box img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.cutImg .cut-show-img {
+  width: 200px;
+  height: 300px;
+  font-size: 16px;
+  color: #333;
+  float: left;
+  margin-left: 20px;
+  overflow: hidden
+}
+
+.cutImg .cut-show-img :first-child {
+  line-height: 100px;
+}
+
+.cutImg .cut-show-img :nth-child(2) {
+  background-color: #ccc;
+  width: 200px;
+  height: 200px;
+  overflow: hidden
+}
+
+.cutImg .cut-show-img img {
+  width: 100%;
+  height: 50%;
+}
+
+/*图片裁剪样式结束*/
+/* 逾期提醒 */
+.overdue-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.overdue-box .shadow {
+  width: 480px;
+  height: 423px;
+  background: rgba(151, 151, 151, 0.8);
+  position: absolute;
+  top: calc((100% - 480px) / 2);
+  left: calc((100% - 423px) / 2);
+  /*height: 100%;*/
+  /*width: 100%;*/
+  z-index: 20001;
+}
+
+.overdue-box .info-box {
+  background: #fff;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  height: 423px;
+  width: 480px;
+}
+
+.overdue-box .info-box .head {
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #303133;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.06);
+  padding: 0 24px;
+  position: relative;
+}
+
+.overdue-box .info-box .head .layui-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+.overdue-box .info-box .content {
+  margin: 24px 24px 28px;
+}
+
+.overdue-box .info-box .content .title {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #2D3034;
+}
+
+.overdue-box .info-box .content .tips {
+  margin-top: 24px;
+}
+
+.overdue-box .info-box .content .icon {
+  text-align: center;
+}
+
+.overdue-box .info-box .content .icon img {
+  width: 92px;
+}
+
+.overdue-box .info-box .content .servcie {
+  margin-top: 10px;
+  height: 94px;
+}
+
+.overdue-box .info-box .content .servcie .box {
+  float: left;
+  position: relative;
+  width: 48%;
+  height: 94px;
+  border-radius: 4px 4px 0px 0px;
+  overflow: hidden;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.overdue-box .info-box .content .servcie .tel {
+  font-size: 22px;
+  color: #2D3034;
+}
+
+.overdue-box .info-box .content .servcie .tel-box {
+  background: #F5F7FA;
+  border-top: 2px solid rgba(0, 102, 255, 0.1);
+  margin-right: 2%;
+  padding-top: 18px;
+}
+
+.overdue-box .info-box .content .servcie .wx-box {
+  background: rgba(81, 195, 0, 0.1);
+  border-top: 2px solid rgba(81, 195, 0, 0.1);
+  margin-left: 2%;
+  padding-top: 7px;
+}
+
+.overdue-box .info-box .content .servcie .tel-box .text {
+  color: #979797;
+  font-size: 12px;
+}
+
+.overdue-box .info-box .content .servcie .wx-box div {
+  float: left;
+}
+
+.overdue-box .info-box .content .servcie .qr-code {
+  width: 76px;
+}
+
+.overdue-box .info-box .content .servcie .bg-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45px;
+}
+
+.overdue-box .foot {
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.06);
+  line-height: 48px;
+  height: 48px;
+  padding-top: 8px;
+  padding-right: 24px;
+}
+
+.overdue-box .foot button {
+  background: none;
+  border: none;
+  float: right;
+  padding: 6px 17px;
+  cursor: pointer;
+}
+
+.overdue-box .foot .confirm {
+  background: #0078F0;
+  border-radius: 2px;
+  color: #fff;
+  margin-left: 10px;
+
+}
+
+.overdue-box .close {
+  display: none;
+  position: absolute;
+}
+
+/*表格*/
+.power-table{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+

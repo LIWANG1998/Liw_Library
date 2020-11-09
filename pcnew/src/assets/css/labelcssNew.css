@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1870159 */
+    src: url('//at.alicdn.com/t/font_1870159_agv3evarh69.eot');
+    src: url('//at.alicdn.com/t/font_1870159_agv3evarh69.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1870159_agv3evarh69.woff2') format('woff2'), url('//at.alicdn.com/t/font_1870159_agv3evarh69.woff') format('woff'), url('//at.alicdn.com/t/font_1870159_agv3evarh69.ttf') format('truetype'), url('//at.alicdn.com/t/font_1870159_agv3evarh69.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clear-all {
+    color: #0082EF;
+    float: right;
+    cursor: pointer;
+    line-height: 32px;
+}
+
+/*标签管理*/
+/*1026 - 1920 */
+@media screen and (min-width: 1150px){
+    .labelManage .label-content .label-list li {
+        width: 40%;
+        min-width: 450px;
+    }
+
+    .labelManage .label-content .label-list li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+/*小于1025*/
+@media screen and (max-width: 1149px) {
+    .labelManage .label-content .label-list li {
+        width: 40%;
+        min-width: 450px;
+        margin-right: 0;
+    }
+}
+
+.labelManage .label-content {
+    width: 100%;
+    font-size: 16px;
+    color: #303133;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.labelManage .label-content .title {
+    width: 100%;
+    height: 22px;
+    box-sizing: border-box;
+    color: #303133;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 4px solid #0082EF;
+    margin: 14px 20px;
+    padding-left: 10px;
+}
+
+.labelManage .label-content .title i {
+    font-size: 16px;
+    color: #B4BCCC;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.labelManage .label-content .title span {
+    font-size: 12px;
+    color: #B4BCCC;
+    margin-left: 15px;
+}
+
+.labelManage .label-content .label-list {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.labelManage .label-content .label-list li {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+    /*padding-left: 20px;*/
+}
+
+.labelManage .label-content .label-list li .check-label {
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    display: none;
+}
+
+.labelManage .label-content .label-list li .label-list-li {
+    /*width: 400px;*/
+    /*width: 90%;*/
+    min-width: 450px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(48, 49, 51, 0.1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    line-height: 70px;
+    vertical-align: middle;
+    margin-top: 0;
+    display: inline-block;
+}
+.labelManage .label-content .label-list li .label-list-li  .label-name{
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*width: 8em;*/
+    max-width: 8em;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    color:#303133;
+    font-size: 18px;
+    font-weight: bold;
+}
+.labelManage .count {
+    color: #909399;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.labelManage .label-content .label-list li .label-list-li .layout {
+    float: left;
+    width: 50%;
+    line-height: 70px;
+}
+
+
+.labelManage .label-content .label-list li .label-list-li .label-option {
+    text-align: right;
+    color: #B4BCCC;
+    font-size: 12px;
+}
+
+.labelManage .label-content .label-list li .label-list-li .label-option span {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.labelManage .label-content .label-list li .label-list-li .label-option span i {
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.labelManage .label-content .label-list li .label-list-li .label-option span:hover {
+    color: #0073D4;
+}
+.labelManage .label-content .label-list li .label-list-li .label-option .delData:hover {
+    color: #FF6161;
+}
+
+.labelManage .label-content .label-list li .label-list-li:hover {
+    border: 1px solid #74c0ff;
+}
+
+.labelManage .label-content .label-list li .label-list-active {
+    border: 1px solid #74c0ff;
+}
+
+/*# sourceMappingURL=labelManage.css.map */

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>轻松任务数据大屏</title>
+    <meta name="keywords" content="轻松任务数据大屏">
+    <meta name="description" content="轻松任务数据大屏">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stati.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        * {
+            font-family: "PingFang SC", "Microsoft YaHei", SCHeiti, Helvetica;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="name">轻松任务数据大屏</p>
+        <p class="now"></p>
+    </header>
+    <div class="split-box split-box-thin"></div>
+    <section class="content">
+        <div class="flex number">
+            <div class="number-box">
+                <p>任务总数</p>
+                <div class="number total counter">0</div>
+            </div>
+            <div class="number-box">
+                <p>正常任务</p>
+                <div class="number normal counter">0</div>
+            </div>
+            <div class="number-box">
+                <p>逾期任务</p>
+                <div class="number overdue counter">0</div>
+            </div>
+            <div class="number-box">
+                <p>处理中</p>
+                <div class="number processing counter">0</div>
+            </div>
+            <div class="number-box">
+                <p>已完成</p>
+                <div class="number finish counter">0</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="box monthTarget">
+                <div class="title">本月指标</div>
+                <div class="content">
+                    <div class="chart" id="monthTarget">
+                        <div class="target-box target1">
+                            <div>非常紧急任务</div>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                            <div class="num">0</div>
+                        </div>
+                        <div class="target-box target2">
+                            <div>紧急任务</div>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                            <div class="num">0</div>
+                        </div>
+                        <div class="target-box target3">
+                            <div>普通任务</div>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                            <div class="num">0</div>
+                        </div>
+                        <div class="target-box time1" style="margin-top: 31px;">
+                            <div>平均响应时长</div>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                            <div class="num">0秒</div>
+                        </div>
+                        <div class="target-box time2">
+                            <div>平均处理时长</div>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                            <div class="num">0秒</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box monthChart">
+                <div class="title">本月任务统计</div>
+                <div class="content">
+                    <div class="chart-title">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <label style="margin-left: 5px;">当月任务量</label>
+                    </div>
+                    <div class="chart" id="monthChart" style="height: 222px;padding-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex rank">
+            <div class="box">
+                <div class="title">当月公司逾期排行榜</div>
+                <div class="content">
+                    <div class="chart" id="monthCompany"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title">当月员工逾期排行榜</div>
+                <div class="content">
+                    <div class="chart" id="monthStaff"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="title">当月员工最快响应排行榜</div>
+                <div class="content">
+                    <div class="chart" id="monthTime"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.4.1/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="js/echarts.min.js?v=2.0.0" charset="utf-8"></script>
+    <script src="js/number/jquery.countup.min.js"></script>
+    <script src="js/number/jquery.waypoints.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/stati.js"></script>
+</body>
+
+</html>

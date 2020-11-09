@@ -1,0 +1,79 @@
+{
+  "id": "1950085",
+  "name": "任务管理系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201556",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "538489",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "14470447",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "10278208",
+      "name": "上传",
+      "font_class": "shangchuan1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "924704",
+      "name": "热度",
+      "font_class": "redu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "4333919",
+      "name": "标签",
+      "font_class": "biaoqian",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "2325920",
+      "name": "列表4",
+      "font_class": "liebiao",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "1111360",
+      "name": "编辑",
+      "font_class": "bianji1",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "5269227",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "7440254",
+      "name": "通知",
+      "font_class": "tongzhi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
