@@ -2059,12 +2059,12 @@ aws4@^1.8.0:
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.1.tgz?cache=0&sync_timestamp=1597237018736&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faws4%2Fdownload%2Faws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
   integrity sha1-4eguTz6Zniz9YbFhKA0WoRH4ZCg=
 
-axios@^0.19.2:
-  version "0.19.2"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz?cache=0&sync_timestamp=1597979584536&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
-  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
-    follow-redirects "1.5.10"
+    follow-redirects "^1.10.0"
 
 babel-eslint@^10.1.0:
   version "10.1.0"
@@ -2100,6 +2100,15 @@ babel-plugin-dynamic-import-node@^2.3.3:
   integrity sha1-hP2hnJduxcbe/vV/lCez3vZuF6M=
   dependencies:
     object.assign "^4.1.0"
+
+babel-polyfill@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
+  integrity sha1-N5k3q8Z9eJWXCtxiHyhM2WbPIVM=
+  dependencies:
+    babel-runtime "^6.26.0"
+    core-js "^2.5.0"
+    regenerator-runtime "^0.10.5"
 
 babel-runtime@6.x, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   version "6.26.0"
@@ -2969,6 +2978,11 @@ core-js@^2.4.0:
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.11.tgz?cache=0&sync_timestamp=1586450527243&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw=
 
+core-js@^2.5.0:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
+
 core-js@^3.6.5:
   version "3.6.5"
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.6.5.tgz?cache=0&sync_timestamp=1586450527243&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
@@ -3277,13 +3291,6 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.npm.taobao.org/debug/download/debug-2.6.9.tgz?cache=0&sync_timestamp=1600502871403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
-  dependencies:
-    ms "2.0.0"
-
-debug@=3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz?cache=0&sync_timestamp=1600502871403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
   dependencies:
     ms "2.0.0"
 
@@ -4260,17 +4267,10 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@1.5.10:
-  version "1.5.10"
-  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.10.tgz?cache=0&sync_timestamp=1597057988030&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
-  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
-  dependencies:
-    debug "=3.1.0"
-
-follow-redirects@^1.0.0:
-  version "1.13.0"
-  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.0.tgz?cache=0&sync_timestamp=1597057988030&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
-  integrity sha1-tC6Nk6Kn7qXtiGM2dtZZe8jjhNs=
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
+  integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -7219,6 +7219,11 @@ regenerate@^1.4.0:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/regenerate/download/regenerate-1.4.1.tgz#cad92ad8e6b591773485fbe05a485caf4f457e6f"
   integrity sha1-ytkq2Oa1kXc0hfvgWkhcr09Ffm8=
+
+regenerator-runtime@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
+  integrity sha1-M2w+/BIgrc7dosn6tntaeVWjNlg=
 
 regenerator-runtime@^0.11.0:
   version "0.11.1"
